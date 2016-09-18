@@ -1,6 +1,6 @@
 library(reshape2)
 
-## Download the data
+# Download the data
 if (!file.exists(filename)){
   fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
   download.file(fileURL, destfile = "data.zip", method = "auto")
@@ -37,7 +37,7 @@ testAct <- read.table("UCI HAR Dataset/test/Y_test.txt")
 testSub <- read.table("UCI HAR Dataset/test/subject_test.txt")
 test <- cbind(testSub, testAct, test)
 
-# merge actual and test with abels
+# merge actual and test with labels
 mergeData <- rbind(training, test)
 colnames(mergeData) <- c("Subject", "Activity", featureGrep.names)
 
