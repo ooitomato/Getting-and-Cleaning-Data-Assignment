@@ -13,3 +13,8 @@ The run_Analysis.R will do the following:-
 5. Then read actual training data and test data
 6. Merge the actual training and test data and proper labels to it
 7. and then finally create a new file with data that is already being tidy up from the merge file
+
+oource of Data:
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones - Description of the data
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip - source file of data
+
